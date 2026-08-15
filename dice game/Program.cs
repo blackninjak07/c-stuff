@@ -1,8 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
+using System.Diagnostics;
 
 namespace dice_game
 {
@@ -10,11 +14,39 @@ namespace dice_game
     {
         public static void Main(string[] args)
         {
+            int player1;
+            int ai;
+
+            int playerScore = 0;
+            int aiScore = 0;
+
             Random rnd = new Random();
-            int[] dice = new[] { 1, 2, 3, 4, 5, 6 };
-            int[] dice1 = new[] { 1, 2, 3, 4, 5, 6 };
-            Console.WriteLine(dice[rnd.Next(0, dice.Length)]);
-            Console.WriteLine(dice1[rnd.Next(0, dice.Length)]);
+
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("press any key to roll the dice");
+                Console.ReadKey();
+
+                player1 = rnd.Next(1, 6);
+                Console.WriteLine("you rolled a " + player1);
+
+                Console.WriteLine("....");
+                System.Threading.Thread.Sleep(1000);
+
+                ai = rnd.Next(1, 6);
+                Console.WriteLine("your oppenent rolled a " + ai);
+
+                if (player1 > ai)
+                {
+                    playerScore++;
+                    Console.WriteLine("player1 wins this round");
+                }
+                else if (player1 < ai)
+                {
+                    aiScore++;
+                    Console.WriteLine("ai wins this round");
+                }
+            }
         }
     }
 }
