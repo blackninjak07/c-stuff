@@ -44,7 +44,7 @@ namespace calculator
                 result = num1 / num2;
             }
 
-            Console.WriteLine("output: "+ result);//end
+            Console.WriteLine("output: "+ result);
            
         }
     }
