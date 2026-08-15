@@ -1,0 +1,6 @@
+C:\Users\kenda\RiderProjects\calculator\calculator\bin\Debug\calculator.exe
+C:\Users\kenda\RiderProjects\calculator\calculator\bin\Debug\calculator.pdb
+C:\Users\kenda\RiderProjects\calculator\calculator\obj\Debug\calculator.csproj.AssemblyReference.cache
+C:\Users\kenda\RiderProjects\calculator\calculator\obj\Debug\calculator.csproj.CoreCompileInputs.cache
+C:\Users\kenda\RiderProjects\calculator\calculator\obj\Debug\calculator.exe
+C:\Users\kenda\RiderProjects\calculator\calculator\obj\Debug\calculator.pdb
