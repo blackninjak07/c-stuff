@@ -46,6 +46,26 @@ namespace dice_game
                     aiScore++;
                     Console.WriteLine("ai wins this round");
                 }
+                else
+                {
+                    Console.WriteLine("tie");
+                }
+
+                Console.WriteLine("The score is - player1: " +playerScore + " ai: " +aiScore + ""); 
+                Console.WriteLine();
+            }
+
+            if (playerScore > aiScore)
+            {
+                Console.WriteLine("player1 won");   
+            }
+            else if (playerScore < aiScore)
+            {
+                Console.WriteLine("ai won");
+            }
+            else
+            {
+                    Console.WriteLine("tie");
             }
         }
     }
