@@ -1,12 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Diagnostics.Eventing.Reader;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Threading;
-using System.Diagnostics;
 
 namespace dice_game
 {
@@ -51,13 +43,13 @@ namespace dice_game
                     Console.WriteLine("tie");
                 }
 
-                Console.WriteLine("The score is - player1: " +playerScore + " ai: " +aiScore + ""); 
+                Console.WriteLine("The score is - player1: " + playerScore + " ai: " + aiScore + "");
                 Console.WriteLine();
             }
 
             if (playerScore > aiScore)
             {
-                Console.WriteLine("player1 won");   
+                Console.WriteLine("player1 won");
             }
             else if (playerScore < aiScore)
             {
@@ -65,8 +57,9 @@ namespace dice_game
             }
             else
             {
-                    Console.WriteLine("tie");
+                Console.WriteLine("tie");
             }
         }
     }
-}
+}  
+    
